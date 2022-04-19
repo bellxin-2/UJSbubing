@@ -1,0 +1,14 @@
+按键已修改  
+
+
+ if (switch_is_mid(chassis_move_mode->chassis_RC->rc.s[CHASSIS_MODE_CHANNEL]))
+    {
+        if(	chassis_move_mode->chassis_RC->key.v & KEY_PRESSED_OFFSET_B)
+						chassis_behaviour_mode = CHASSIS_NO_FOLLOW_YAW;
+       else
+         chassis_behaviour_mode = CHASSIS_INFANTRY_FOLLOW_GIMBAL_YAW;
+    }
+
+小陀螺问题已解决
+
+注释掉限位函数的限制
